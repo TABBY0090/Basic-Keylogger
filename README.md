@@ -7,7 +7,7 @@ This project is strictly for **educational and ethical cybersecurity learning pu
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 This project simulates a **keylogging attack scenario** to demonstrate how attackers capture keystrokes and send them to a remote server.
 
@@ -37,7 +37,7 @@ Workflow:
 
 ---
 
-# 🔐 Cybersecurity Concepts Demonstrated
+# Cybersecurity Concepts Demonstrated
 
 This project demonstrates several important security concepts:
 
@@ -47,6 +47,6 @@ This project demonstrates several important security concepts:
 - Malware behavior analysis
 - Network traffic monitoring
 
-# 👨‍💻 Author
+# Author
 Cybersecurity Learning Project  
 GitHub: https://github.com/SHELLY1209
